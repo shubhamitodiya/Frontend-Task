@@ -1,0 +1,59 @@
+.add-task-form input {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.add-task-form button {
+  margin-top: 5px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column; /* vertical stack */
+  gap: 10px;
+}
+
+.task-item {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.4s ease, filter 0.4s ease, transform 0.2s ease;
+}
+
+.task-item.completed {
+  opacity: 0.5;
+  filter: brightness(0.7);
+  transform: scale(0.95);
+}
+
+.task-item.toggle-animation {
+  animation: popToggle 0.3s ease;
+}
+
+@keyframes popToggle {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.task-title {
+  transition: all 0.3s ease;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+}
+
+.task-desc {
+  font-weight: 500;
+  transition: font-weight 0.3s ease;
+}
+
+.task-item.completed .task-desc {
+  font-weight: 300;
+}
