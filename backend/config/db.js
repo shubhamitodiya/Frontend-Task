@@ -1,4 +1,4 @@
-// backend/config/db.js
+
 const mongoose = require("mongoose");
 require("dotenv").config(); 
 
@@ -11,7 +11,7 @@ const connectDB = async () => {
     console.log("MongoDB connected successfully");
   } catch (err) {
     console.error("MongoDB connection failed:", err.message);
-    process.exit(1); // Exit process with failure
+    process.exit(1); 
   }
 };
 

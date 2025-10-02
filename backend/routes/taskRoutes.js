@@ -8,6 +8,6 @@ router.get("/", auth, getTasks);
 router.post("/", auth, createTask);
 router.put("/:id", auth, updateTask);
 router.delete("/:id", auth, deleteTask);
-router.patch("/:id/toggle", auth, toggleCompleteTask); // ✅ add this line
+router.patch("/:id/toggle", auth, toggleCompleteTask); 
 
 module.exports = router;
