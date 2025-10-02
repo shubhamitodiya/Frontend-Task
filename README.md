@@ -135,3 +135,4 @@ In production: deploy backend on Render/Heroku and frontend on Vercel/Netlify.
 Author
 [Your Name]
 >>>>>>> 6aa0e08 (Add project screenshots)
+git add README.md
